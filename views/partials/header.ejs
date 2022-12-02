@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>pdCorp</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--Favicon -->
+	<link rel="icon" type="image/png" href="images/pdCorpImages/WhatsApp Image 2022-12-02 at 10.27.21 PM.jpeg" />
+		
+	<!-- CSS Files -->
+		
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- End CSS Files -->
+	<style>
+		.dropdown:hover .dropdown-menu{
+			display: block;
+		}
+		.dropdown-menu{
+			margin-top: 0;
+		}
+		
+	</style>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+	<script>
+	$(document).ready(function(){
+		$(".dropdown").hover(function(){
+			var dropdownMenu = $(this).children(".dropdown-menu");
+			if(dropdownMenu.is(":visible")){
+				dropdownMenu.parent().toggleClass("open");
+			}
+		});
+	});     
+	$(document).ready(function() {
+            $("#hulk").click(function() {
+                $(document).scrollTop($(document).height());
+            });
+        });    
+	</script>
+	
+
+</head>
+
+<body style="overflow-x: hidden;">
+<div>
+	<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+		
+		<a href="/"><img src="images/pdCorpImages/WhatsApp Image 2022-12-02 at 10.27.21 PM.jpeg" style="width: 70%;" alt="myimage"/></a>
+		
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarText">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark" type="button" id="About pdCorp"  aria-expanded="false">
+						<a class="text-light" href="/">Home</a>
+					</button>
+			</li>
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark" type="button" id="About pdCorp"  aria-expanded="false">
+						<a class="text-light" href="/">About us</a>
+					</button>
+			</li>
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark dropdown-toggle" type="button" id="About pdCorp" data-toggle="dropdown" aria-expanded="false">
+					  Products
+					</button>
+					<div class="dropdown-menu bg-secondary" aria-labelledby="About pdCorp">
+						<a class="dropdown-item bg-secondary" href="/">CO-AXIAL CABLE</a>
+						<a class="dropdown-item bg-secondary" href="/">LAN CABLES</a>
+						<a class="dropdown-item bg-secondary" href="/">TELEPHONE SWITCHBOARD CABLE</a>
+						<a class="dropdown-item bg-secondary" href="/">SINGLE CORE & MULTICORE FLEXIBLE</a>
+						<a class="dropdown-item bg-secondary" href="/">CCTV CABLE</a>
+						<a class="dropdown-item bg-secondary" href="/">SPEAKER CABLE</a>
+						<a class="dropdown-item bg-secondary" href="/">INDUSTRIAL WIRES</a>
+						<a class="dropdown-item bg-secondary" href="/">INSTRUMENTATION CABLES</a>
+						<a class="dropdown-item bg-secondary" href="/">JELLY FILLED TELPHONE CABLE</a>
+						<a class="dropdown-item bg-secondary" href="/">SUBMERSIBLE CABLES</a>
+						<a class="dropdown-item bg-secondary" href="/">UNARMOURED / ARMOURED XLPE</a>
+						<a class="dropdown-item bg-secondary" href="/">HT XLPE CABLE</a>
+						<a class="dropdown-item bg-secondary" href="/">SOLAR CABLE</a>
+						<a class="dropdown-item bg-secondary" href="/">FLEXIBLE FR & FRLS CABLE</a>
+						<a class="dropdown-item bg-secondary" href="/">RUBBER CABLE</a>
+					</div>
+				  </div>
+			</li>
+
+						
+			<li class="nav-item">
+				<div class="dropdown">
+					<button class="btn btn-dark" type="button" id="hulk"  aria-expanded="false">
+						<a class="text-light" href="#bottom">Contact us</a>
+					</button>
+			</li>
+			
+		</ul>
+
+		</div>
+	  </nav>
+</div>	
